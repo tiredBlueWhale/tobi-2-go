@@ -1,0 +1,70 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://dpiqrahyvlfio"]
+
+[ext_resource type="Texture2D" uid="uid://d1egolwr54xkw" path="res://assets/textures/button_up.png" id="1_bgwuv"]
+[ext_resource type="Texture2D" uid="uid://dns1y60uu7sr" path="res://assets/textures/button_down.png" id="2_grt6g"]
+[ext_resource type="Texture2D" uid="uid://b1jfvyqqdkn7s" path="res://assets/textures/SliderGrabber.png" id="3_17k7i"]
+[ext_resource type="FontFile" uid="uid://dnqdpswh5xs6" path="res://assets/fonts/PressStart2P-Regular.ttf" id="4_iur37"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_brbxa"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7tnr0"]
+texture = ExtResource("1_bgwuv")
+texture_margin_left = 64.0
+texture_margin_top = 63.7843
+texture_margin_right = 64.0
+texture_margin_bottom = 128.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kjm0h"]
+texture = ExtResource("1_bgwuv")
+texture_margin_left = 64.0
+texture_margin_top = 64.0
+texture_margin_right = 64.0
+texture_margin_bottom = 128.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ro074"]
+texture = ExtResource("2_grt6g")
+texture_margin_left = 64.0
+texture_margin_top = 90.0
+texture_margin_right = 64.0
+texture_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xnfli"]
+bg_color = Color(0.207843, 0.686275, 0.607843, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 16.0
+expand_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wln7"]
+bg_color = Color(0.988235, 0.301961, 0.054902, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+expand_margin_top = 16.0
+expand_margin_bottom = 16.0
+
+[resource]
+default_font = ExtResource("4_iur37")
+default_font_size = 48
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = null
+Button/styles/focus = SubResource("StyleBoxEmpty_brbxa")
+Button/styles/hover = SubResource("StyleBoxTexture_7tnr0")
+Button/styles/normal = SubResource("StyleBoxTexture_kjm0h")
+Button/styles/pressed = SubResource("StyleBoxTexture_ro074")
+HSlider/icons/grabber = ExtResource("3_17k7i")
+HSlider/icons/grabber_disabled = ExtResource("3_17k7i")
+HSlider/icons/grabber_highlight = ExtResource("3_17k7i")
+HSlider/styles/grabber_area = SubResource("StyleBoxFlat_xnfli")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_xnfli")
+HSlider/styles/slider = SubResource("StyleBoxFlat_3wln7")
+XLargeLabel/base_type = &"Label"
+XLargeLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+XLargeLabel/constants/outline_size = 32
+XLargeLabel/font_sizes/font_size = 144

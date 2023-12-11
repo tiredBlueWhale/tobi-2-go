@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqmx3hqhrqdqg"]
+
+[ext_resource type="Script" path="res://common/speaker_select_control.gd" id="1_814q2"]
+[ext_resource type="PackedScene" uid="uid://blwddeq2cjexb" path="res://common/speaker_scoll_container.tscn" id="2_eoeax"]
+
+[node name="SpeakerSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_814q2")
+
+[node name="SpeakerScrollContainer" parent="." instance=ExtResource("2_eoeax")]
+layout_mode = 1

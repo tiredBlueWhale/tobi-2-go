@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwp0whvq5blve"]
+
+[ext_resource type="Script" path="res://common/audio_button_control.gd" id="1_cnjky"]
+
+[node name="AudioButton" type="Button"]
+toggle_mode = true
+text = "Audio Button"
+script = ExtResource("1_cnjky")
